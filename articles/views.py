@@ -6,7 +6,7 @@ from articles.models import Article
 
 def articles_list(request):
     template = 'articles/news.html'
-    articles = list(Article.objects.all())
+    articles = Article.objects.all()
     context = {'article':articles}
     print(context['article'])
     # используйте этот параметр для упорядочивания результатов
