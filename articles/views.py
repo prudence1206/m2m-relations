@@ -1,7 +1,7 @@
 from django.views.generic import ListView
 from django.shortcuts import render
 
-from articles.models import Article
+from articles.models import Article, Scope, Tag
 
 
 def articles_list(request):
