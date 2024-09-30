@@ -7,8 +7,8 @@ from articles.models import Article, Scope, Tag
 def articles_list(request):
     template = 'articles/news.html'
     articles = Article.objects.all()
-    context = {'article':articles}
-    print(context['article'])
+    context = {'object_list':articles}
+    print(context)
     # используйте этот параметр для упорядочивания результатов
     # https://docs.djangoproject.com/en/2.2/ref/models/querysets/#django.db.models.query.QuerySet.order_by
     ordering = '-published_at'
