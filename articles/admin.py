@@ -33,3 +33,4 @@ class TagAdmin(admin.ModelAdmin):
 @admin.register(Scope)
 class ScopeAdmin(admin.ModelAdmin):
     pass
+
